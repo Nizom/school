@@ -1,0 +1,122 @@
+header{
+	background-color: #4b0c09;
+	padding-top: 40px;
+	@include respond-to(retina){
+		padding-top: 80px;	
+	}
+	.header{
+		font-family: "Roboto";
+		width: $width;
+		margin: 0 auto;
+		@include respond-to(retina){
+			width: $width-retina;
+		}
+		.logo{
+			float: left;
+		}
+		.site-description{
+			display: inline-block;
+			position: relative;
+			vertical-align: top;
+			font-size: 21px;
+			color: #fff;
+			margin: 0 250px 0 33px;
+			text-transform: uppercase;
+			font-weight: bold;
+			width: 200px;
+			line-height: 24px;
+			@include respond-to(retina){
+				line-height: 48px;
+				width: 400px;
+				margin: 0 500px 0 66px;
+				font-size: 40px;
+			}
+		}
+		.info{
+			display: inline-block;
+			vertical-align: top;
+			text-align: right;
+			color: #fff;
+			.phones{
+				font-size: 15px;
+				margin: 0 0 10px 0;
+				@include respond-to(retina){
+					margin: 0 0 20px 0;
+					font-size: 30px;
+				}
+			}
+			.worktime{
+				font-weight: lighter;
+				font-size: 12px;
+				margin: 0;
+				@include respond-to(retina){
+					font-size: 24px;
+				}
+			}
+		}
+		.main-menu{
+			padding-bottom: 40px;
+			display: inline-block;
+			@include respond-to(retina){
+				padding:0 0 60px 80px;
+			}
+			li{
+				display: inline-block;
+				padding-right: 40px;
+				@include respond-to(retina){
+					padding-right: 80px;
+				}
+				a{
+					color: #fff;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: 12px;
+					@include respond-to(retina){
+						font-size: 24px;
+					}
+					&.active,&:hover{
+						padding-bottom: 12px;
+						border-bottom: 2px solid  #fff;
+						@include respond-to(retina){
+							padding-bottom: 24px;
+						}
+					}
+				}
+			}
+		}
+		.make-order{
+			width: 150px;
+			height: 34px;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			border: 2px solid #e7e7e7;
+			border-radius: 37px;
+			background-clip: padding-box;
+			background-color: rgba(255,255,255,.1);
+			margin-left: 40px;
+			background-color: #5d2522;
+			text-transform: uppercase;
+			@include respond-to(retina){
+				width: 300px;
+				height: 68px;
+				margin-left: 80px;
+				border: 4px solid #e7e7e7;
+			}
+			a{
+				display: block;
+				width: 100%;
+				height: 100%;
+				color: #fff;
+				text-decoration: none;
+				padding-top: 6px;
+				font-size: 13px;
+				@include respond-to(retina){
+					padding-top: 17px;
+					font-size: 26px;
+				}
+			}
+		}
+	}
+}

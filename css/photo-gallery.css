@@ -1,0 +1,16 @@
+.content-wrapper.photo-gallery-wrap .content .photo-gallery .quick-tabs-links li a {
+  font-size: 15px;
+  background-position: 0 17px; }
+.content-wrapper.photo-gallery-wrap .content .photo-gallery .photo-wrap {
+  display: inline-block;
+  position: relative;
+  width: 213px;
+  height: 213px;
+  overflow: hidden;
+  margin: 0 23px 25px 0; }
+  .content-wrapper.photo-gallery-wrap .content .photo-gallery .photo-wrap:nth-child(5n) {
+    margin-right: 0; }
+  .content-wrapper.photo-gallery-wrap .content .photo-gallery .photo-wrap img {
+    width: 100%; }
+
+/*# sourceMappingURL=photo-gallery.css.map */

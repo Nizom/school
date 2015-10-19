@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAKK,kFAAC;EACA,SAAS,EAAE,IAAI;EACf,mBAAmB,EAAE,MAAM;AAI9B,uEAAW;EACV,OAAO,EAAE,YAAY;EACrB,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,aAAa;EACrB,qFAAe;IACd,YAAY,EAAE,CAAC;EAEhB,2EAAG;IACF,KAAK,EAAE,IAAI",
+"sources": ["../sass/photo-gallery.scss"],
+"names": [],
+"file": "photo-gallery.css"
+}

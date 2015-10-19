@@ -1,0 +1,47 @@
+.staff-wrapper{
+	h1{
+		margin-bottom: 25px;
+	}
+	.content{
+		.staff-wrap{
+			margin-bottom: 60px;
+			.staff-item{
+				display: inline-block;
+				height: 255px;
+				width: 228px;
+				margin-bottom: 10px;
+				vertical-align: top;
+				.image-wrap{
+					width: 122px;
+					height: 122px;
+					margin: 0 auto 0 auto;
+					padding-top: 65px;
+				}
+				.staff-name{
+					text-align: center;
+					font-size: 15px;
+				}
+				.more{
+					display: none;
+					text-align: center;
+					font-size: 15px;
+					color: #0052c2;
+					text-decoration: none;
+					font-weight: 500;
+				}
+				&:hover{
+					border-radius: 3px;
+					background-clip: padding-box;
+					background-color: #fff;
+					box-shadow: 0 0 100px rgba(0,0,0,.2);
+					.image-wrap{
+						padding-top: 25px;
+					}
+					.more{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

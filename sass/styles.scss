@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,500,400italic,300italic,300,100,100italic);
+
+//$normal: 1300px;
+$retina: 2500px;
+
+@mixin respond-to($media) {
+  @if $media == norm {
+    @media only screen and (max-width: $normal) { @content; }
+  }
+  @else if $media == retina {
+    @media only screen and (min-width: $retina) { @content; }
+  }
+}
+
+$width: 1160px;
+$width-retina: 2320px;
+body{
+	margin: 0;
+}
+p, a, span, div{
+	font-family: "Roboto";
+}
+img{
+	width: 50%;
+	@include respond-to(retina){width: 100%;	}
+	&.full-size{
+		width: 100%;
+	}
+}
+h1{
+	color: #000;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 0 0 40px 0;
+}
+@mixin ovf-img { 
+	overflow: hidden; 
+	text-align: center; 
+	word-spacing: nowrap; 
+	vertical-align: middle; 
+	&:after { 
+		content: ""; 
+		display: inline-block; 
+		height: 100%; 
+		vertical-align: middle; 
+	} 
+	img { 
+		position: relative; 
+		top: 50%; 
+		transform: translateY(-50%); 
+		max-width: 100%; 
+		height: auto; 
+		vertical-align: middle; 
+	}
+}
+
+@import "header";
+@import "footer";
+@import "content";
+@import "right-sidebar";
+@import "photo-gallery";
+@import "staff";
+

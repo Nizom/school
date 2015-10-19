@@ -1,0 +1,42 @@
+footer{
+	background-color: #1d1f21;
+	clear: both;
+	.footer{
+		width: $width;
+		margin: 0 auto;
+		padding: 40px 0;
+		@include respond-to(retina){
+			width: $width-retina;
+			padding: 80px 0;
+		}
+		.logo{
+			display: inline-block;		
+		}
+		.info{
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;
+			color: #fff;
+			margin:23px 0 0 113px;
+			.phones{
+				font-size: 15px;
+				margin: 0 0 10px 0;
+			}
+			.worktime{
+				font-weight: lighter;
+				font-size: 12px;
+				margin: 0;
+			}
+		}
+		.search-field{
+			float: right;
+			margin-top: 23px;
+			height: 37px;
+			width: 177px;
+			border-radius: 50px;
+			border: 0;
+			padding-left: 25px;
+			font-size: 12px;
+		}
+	}
+}

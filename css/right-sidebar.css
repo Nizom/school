@@ -1,0 +1,92 @@
+.right-sidebar {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  width: 267.5px;
+  margin: 0 0 60px 0; }
+  .right-sidebar .sidebar-wrap {
+    padding: 0 13px; }
+    .right-sidebar .sidebar-wrap .blue-title {
+      font-size: 20px;
+      text-align: center;
+      color: #0052c2;
+      margin: 14px 0 6px 0;
+      font-weight: 500; }
+    .right-sidebar .sidebar-wrap .dipolm-text {
+      margin: 6px 0 18px 0;
+      text-align: center;
+      font-size: 14px;
+      color: #1d1f21; }
+  .right-sidebar .news-block {
+    height: 418px;
+    margin-bottom: 120px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); }
+    .right-sidebar .news-block .news-title {
+      font-size: 20px;
+      color: #1d1f21;
+      font-weight: 500;
+      margin: 15px 0 10px 0; }
+    .right-sidebar .news-block .news-text {
+      color: #1d1f21;
+      font-size: 14px;
+      margin: 13px 0 22px 0; }
+    .right-sidebar .news-block .news-date {
+      color: #929292;
+      font-weight: lighter;
+      font-size: 12px;
+      margin: 25px 0 0 0;
+      padding: 0 0 20px 0; }
+  .right-sidebar .diplom-block {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); }
+    .right-sidebar .diplom-block .dip-wrap {
+      height: 213px; }
+    .right-sidebar .diplom-block img.diplom {
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      bottom: 18px;
+      margin-bottom: -18px;
+      padding: 0 28px 0 45px;
+      box-sizing: border-box; }
+    .right-sidebar .diplom-block .image-block {
+      position: relative; }
+      .right-sidebar .diplom-block .image-block .under-image {
+        position: absolute;
+        top: 0;
+        text-align: center;
+        width: 267.5px; }
+        .right-sidebar .diplom-block .image-block .under-image .under-title {
+          margin: 26px 0 0 0;
+          font-size: 20px;
+          color: #fff;
+          font-weight: 500; }
+        .right-sidebar .diplom-block .image-block .under-image .under-text {
+          font-size: 14px;
+          color: #fff;
+          margin: 7px 0 0 0; }
+        .right-sidebar .diplom-block .image-block .under-image .under-link {
+          display: block;
+          border: 2px solid #e7e7e7;
+          border-radius: 37px;
+          background-clip: padding-box;
+          background-color: rgba(255, 255, 255, 0.1);
+          width: 170px;
+          height: 35px;
+          margin: 37px auto 0 auto; }
+          .right-sidebar .diplom-block .image-block .under-image .under-link a {
+            font-size: 13px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 10px 0 0 0; }
+    .right-sidebar .diplom-block .diplom-education {
+      text-align: center; }
+      .right-sidebar .diplom-block .diplom-education .education-image {
+        margin: 15px 0 10px 0; }
+      .right-sidebar .diplom-block .diplom-education .blue-title {
+        margin-top: 0; }
+
+/*# sourceMappingURL=right-sidebar.css.map */
