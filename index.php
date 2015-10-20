@@ -278,6 +278,7 @@ get_header();
 		 	<option disabled selected>Выберите специальность</option>
 		 	<option value="test2">Тест</option>
 		 	<option value="test3">Тест</option></select>
+		 	<input type="submit" id="edit-submit" name="front-form" value="Отправить заявку" class="form-submit">
 		</div>
 		</form>
 	 </div>
