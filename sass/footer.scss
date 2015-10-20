@@ -18,14 +18,24 @@ footer{
 			text-align: left;
 			color: #fff;
 			margin:23px 0 0 113px;
+			@include respond-to(retina){
+				margin: 46px 0 0 226px;
+			}
 			.phones{
 				font-size: 15px;
 				margin: 0 0 10px 0;
+				@include respond-to(retina){
+					font-size: 30px;
+					margin: 0 0 20px 0;
+				}
 			}
 			.worktime{
 				font-weight: lighter;
 				font-size: 12px;
 				margin: 0;
+				@include respond-to(retina){
+					font-size: 24px;
+				}
 			}
 		}
 		.search-field{
@@ -37,6 +47,14 @@ footer{
 			border: 0;
 			padding-left: 25px;
 			font-size: 12px;
+			@include respond-to(retina){
+				margin-top: 46px;
+				height: 75px;
+				width: 354px;
+				border-radius: 100px;
+				padding-left: 50px;
+				font-size: 24px;
+			}
 		}
 	}
 }

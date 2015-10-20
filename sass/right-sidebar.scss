@@ -4,36 +4,63 @@
 	float: right;
 	width: 267.5px;
 	margin: 0 0 60px 0;
+	@include respond-to(retina){
+		width: 525px;
+		margin: 0 0 120px 0;
+	}
 	.sidebar-wrap{
 		padding: 0 13px;
+		@include respond-to(retina){
+			padding: 0 26px;
+		}
 		.blue-title{
 			font-size: 20px;
 			text-align: center;
 			color: #0052c2;
 			margin: 14px 0 6px 0;
 			font-weight: 500;
+			@include respond-to(retina){
+				font-size: 40px;
+				margin: 28px 0 12px 0;
+			}
 		}
 		.dipolm-text{
 			margin: 6px 0 18px 0;
 			text-align: center;
 			font-size: 14px;
 			color: #1d1f21;
+			@include respond-to(retina){
+				margin: 12px 0 36px 0;
+				font-size: 28px;
+			}
 		}
 	}
 	.news-block{
 		height: 418px;
 		margin-bottom: 120px;
 		box-shadow: 0 0 100px rgba(0,0,0,.2);
+		@include respond-to(retina){
+			height: 836px;
+			margin-bottom: 225px;
+		}
 		.news-title{
 			font-size: 20px;
 			color: #1d1f21;
 			font-weight: 500;
-			margin:15px 0 10px 0;	
+			margin:15px 0 10px 0;
+			@include respond-to(retina){
+				font-size: 40px;
+				margin: 30px 0 20px 0;
+			}	
 		}
 		.news-text{
 			color: #1d1f21;
 			font-size: 14px;
 			margin: 13px 0 22px 0;
+			@include respond-to(retina){
+				font-size: 28px;
+				margin: 26px 0 44px 0;
+			}
 		}
 		.news-date{
 			color: #929292;
@@ -41,13 +68,21 @@
 			font-size: 12px;
 			margin: 25px 0 0 0;
 			padding: 0 0 20px 0;
+			@include respond-to(retina){
+				font-size: 24px;
+				margin: 50px 0 0 0;
+				padding: 0 0 40px 0;
+			}
 		}
 	}
 	.diplom-block{
+		box-shadow: 0 0 100px rgba(0,0,0,.2);
 		.dip-wrap{
 			height: 213px;
+			@include respond-to(retina){
+				height: 426px;
+			}
 		}
-		box-shadow: 0 0 100px rgba(0,0,0,.2);
 		img.diplom{
 			margin: 0 auto;
 			display: block;
@@ -56,6 +91,11 @@
 			margin-bottom: -18px;
 			padding:  0 28px 0 45px;
 			box-sizing: border-box;
+			@include respond-to(retina){
+				bottom: 36px;
+				margin-bottom: -36px;
+				padding: 0 56px 0 90px;
+			}
 		}
 		.image-block{
 			position: relative;
@@ -64,16 +104,27 @@
 				top: 0;
 				text-align: center;
 				width: 267.5px;
+				@include respond-to(retina){
+					width: 525px;
+				}
 				.under-title{
 					margin: 26px 0 0 0;
 					font-size: 20px;
 					color: #fff;
 					font-weight: 500;
+					@include respond-to(retina){
+						margin: 52px 0 0 0;
+						font-size: 40px;
+					}
 				}
 				.under-text{
 					font-size: 14px;
 					color: #fff;
 					margin: 7px 0 0 0;
+					@include respond-to(retina){
+						font-size: 28px;
+						margin: 14px 0 0 0;
+					}
 				}
 				.under-link{
 					display: block;
@@ -84,6 +135,12 @@
 					width: 170px;
 					height: 35px;
 					margin: 37px auto 0 auto;
+					@include respond-to(retina){
+						border-radius: 37px;
+						width: 340px;
+						height: 70px;
+						margin: 75px auto 0 auto;
+					}
 					a{
 						font-size: 13px;
 						font-weight: bold;
@@ -93,6 +150,10 @@
 						width: 100%;
 						height: 100%;
 						padding: 10px 0 0 0;
+						@include respond-to(retina){
+							font-size: 26px;
+							padding: 20px 0 0 0;
+						}
 					}
 				}
 			}
@@ -101,6 +162,10 @@
 			text-align: center;
 			.education-image{
 				margin: 15px 0 10px 0;
+				@include respond-to(retina){
+					margin: 30px 0 20px 0;
+					width: 50%;
+				}
 			}
 			.blue-title{
 				margin-top: 0;

@@ -168,6 +168,16 @@
 				}
 				font-size: 0;
 				.quick-tabs-item{
+					width: 213px;
+					height: 213px;
+					display: inline-block;
+					text-align: center;
+					background-color: #f2f2f2;
+					vertical-align: top;
+					@include respond-to(retina){
+						width: 426px;
+						height: 426px;
+					}
 					.image-wrap{
 						box-sizing: border-box;
 						width: 90px;
@@ -185,27 +195,22 @@
 						}
 						img{
 							margin: 25px auto 0 auto;
-							@include respond-to(retina){
-								margin: 50px auto 0 auto;
-							}
+							width: 50%;
 							&.hover{
 								display: none;
 							}
+							@include respond-to(retina){
+								margin: 50px auto 0 auto;
+							}
 						}
 					}
-					width: 213px;
-					height: 213px;
-					display: inline-block;
-					text-align: center;
-					background-color: #f2f2f2;
-					vertical-align: top;
-					@include respond-to(retina){
-						width: 426px;
-						height: 426px;
-					}
+
 					p{
 						color: #0052c2;
 						font-size: 14px;
+						@include respond-to(retina){
+							font-size: 28px;
+						}
 					}
 					&:nth-child(8n-6),&:nth-child(8n-4),&:nth-child(8n-3),&:nth-child(8n-1){
 						background-color: #f9f9f9;
@@ -220,7 +225,9 @@
 							width: 92px;
 							height: 92px;
 							@include respond-to(retina){
-								
+								border: 4px solid #fff;
+								width: 184px;
+								height: 184px;
 							}
 							.show{
 								display: none;
@@ -238,15 +245,26 @@
 		clear: both;
 		background-color: #4b0c09;
 		margin: 0 0 60px 0;
+		@include respond-to(retina){
+			margin: 0 0 60px 0;
+		}
 		.form-wrap{
 			width: 772px;
 			margin: 0 auto;
 			padding: 32px 0 35px 0;
+			@include respond-to(retina){
+				width: 1544px;
+				padding: 32px 0 35px 0;
+			}
 			.form-title{
 				font-size: 25px;
 				color: #fff;
 				font-weight: 500;
 				margin: 0 0 20px 0;
+				@include respond-to(retina){
+					font-size: 50px;
+					margin: 0 0 40px 0;
+				}
 			}
 			.form-input-text,.form-input-select{
 				padding: 15px;
@@ -257,9 +275,19 @@
 				font-size: 14px;
 				font-weight: lighter;
 				color: #1d1f21;
+				@include respond-to(retina){
+					padding: 30px;
+					width: 726px;
+					height: 110px;
+					margin-bottom: 30px;
+					font-size: 28px;
+				}
 			}
 			.form-input-select{
 				padding: 10px;
+				@include respond-to(retina){
+					padding: 10px;
+				}
 			}
 
 			.form-textarea{
@@ -272,6 +300,12 @@
 				font-size: 14px;
 				font-weight: lighter;
 				color: #1d1f21;
+				@include respond-to(retina){
+					width: 676px;
+					height: 250px;
+					padding: 36px;
+					font-size: 28px;
+				}
 			}
 		}
 	}
