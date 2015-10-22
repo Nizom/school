@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,500,400italic,300italic,300,100,100italic);
 
 //$normal: 1300px;
-$retina: 2500px;
+$retina: 2320px;
 
 @mixin respond-to($media) {
   @if $media == norm {
@@ -21,10 +21,37 @@ p, a, span, div{
 	font-family: "Roboto";
 }
 img{
-	width: 50%;
-	@include respond-to(retina){width: 100%;	}
+	width: 100%;
+	@include respond-to(retina){
+		width: 100%;
+	}
 	&.full-size{
 		width: 100%;
+
+	}
+}
+#shWrap{
+	img{
+		width: inherit;
+
+	}
+}
+.ngg-galleryoverview .ngg-gallery-thumbnail{
+	width: 215px;
+	height: 215px;
+	box-sizing: border-box;
+	@include respond-to(retina){
+		width: 430px;
+		height: 430px;
+	}
+	img{
+		&:hover{
+			background-color: transparent;
+		}
+		padding: 0;
+		border: 0;
+		height: 100%;
+		margin: 0;
 	}
 }
 h1{
@@ -32,6 +59,10 @@ h1{
 	font-size: 25px;
 	font-weight: 500;
 	margin: 0 0 40px 0;
+	@include respond-to(retina){
+		font-size: 50px;
+		margin: 0 0 80px 0;
+	}
 }
 @mixin ovf-img { 
 	overflow: hidden; 
@@ -61,4 +92,4 @@ h1{
 @import "photo-gallery";
 @import "staff";
 @import "contacts";
-
+@import "spec";

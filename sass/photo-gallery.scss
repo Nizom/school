@@ -6,21 +6,55 @@
 					a{
 						font-size: 15px;
 						background-position: 0 17px;
+						@include respond-to(retina){
+							font-size: 30px;
+							background-position: 0 34px;
+						}
 					}
 				}
 			}
-			.photo-wrap{
+			.ngg-gallery-thumbnail{
 				display: inline-block;
 				position: relative;
 				width: 213px;
 				height: 213px;
 				overflow: hidden;
 				margin: 0 23px 25px 0;
+				box-sizing: border-box;
+				@include respond-to(retina){
+					width: 426px;
+					height: 426px;
+					margin: 0 46px 50px 0;
+				}
 				&:nth-child(5n){
 					margin-right: 0;
 				}
 				img{
 					width: 100%;
+					&:hover{
+						background-color: transparent;
+					}
+					padding: 0;
+					border: 0;
+					height: 100%;
+					margin: 0;
+				}
+				&:hover{
+					span{
+					position: absolute;
+					bottom: 0;
+					//text-align: center;
+					padding: 15px;
+					font-size: 15px;
+					color: #fff;
+					width: 100%;
+					background-color: rgba(0,0,0,.7);
+					box-sizing: border-box;
+					@include respond-to(retina){
+						padding: 30px;
+						font-size: 30px;
+					}
+					}
 				}
 				//@include ovf-img;
 				// img{

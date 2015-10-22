@@ -1,0 +1,54 @@
+.contacts-wrapper{
+	.ya-map{
+		float: right;
+		width: 508px;
+		height: 424px;
+		@include respond-to(retina){
+			width: 1017px;
+			height: 848px;
+		}
+	}
+	.content{
+		width: 650px;
+		@include respond-to(retina){
+			width: 1300px;
+		}
+		.contacts{
+			margin-bottom: 100px;
+			@include respond-to(retina){
+				margin-bottom: 200px;
+			}
+			.item{
+				margin-top: 30px;
+				@include respond-to(retina){
+					margin-top: 60px;
+				}
+				.title{
+					font-style: 20px;
+					font-weight: 500;
+					margin: 0;
+					@include respond-to(retina){
+						font-size: 40px;
+					}
+				}
+				.text{
+					font-size: 15px;
+					margin: 13px 0 0 0;
+					@include respond-to(retina){
+						font-size: 30px;
+						margin: 26px 0 0 0;
+					}
+					span{
+						font-weight: lighter;
+						color: #a5a5a5;
+					}
+				}
+			}
+		}
+	}
+	.form.contacts{
+		.form-wrap{
+			text-align: center;
+		}
+	}
+}

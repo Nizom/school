@@ -1,15 +1,5 @@
 $(document).ready(function(){
-    // $(".image").each(function() {
-    //     $(this).width($(this).width() / 2);
-    //       //$(this).height($(this).height() / 2);
-    // });
-    // $(".quick-tabs-links").click(function(event){
-    // 	//event.preventDefault();
-    //  	if ($(this).hasClass("second")) {
-    //  		alert("test");
-    //  	}
-    //  });
-
+//quick-tabs
 	$(".tab").find("a").click(function(event){
 		event.preventDefault();
 	});
@@ -20,6 +10,8 @@ $(document).ready(function(){
 		var tab = $(this).attr('data-tab');
 		$(".quick-tabs-container").hide();
 		$("#tab_" + tab).show();
-
     });
+
+
+   // $('select').find("option[value='Выберите специальность']").attr('disabled','disabled');
 });

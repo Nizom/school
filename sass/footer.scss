@@ -10,14 +10,18 @@ footer{
 			padding: 80px 0;
 		}
 		.logo{
-			display: inline-block;		
+			display: inline-block;
+			width: 97px;
+			@include respond-to(retina){
+				width: 194px;
+			}		
 		}
 		.info{
 			display: inline-block;
 			vertical-align: top;
 			text-align: left;
 			color: #fff;
-			margin:23px 0 0 0px;
+			margin:23px 0 0 100px;
 			@include respond-to(retina){
 				margin: 46px 0 0 200px;
 			}
@@ -38,23 +42,26 @@ footer{
 				}
 			}
 		}
-		.search-field{
+		#searchform{
 			float: right;
 			margin-top: 23px;
-			height: 37px;
-			width: 177px;
-			border-radius: 50px;
-			border: 0;
-			padding-left: 25px;
-			font-size: 12px;
-			@include respond-to(retina){
-				margin-top: 46px;
-				height: 75px;
-				width: 354px;
-				border-radius: 100px;
-				padding-left: 50px;
-				font-size: 24px;
+			.search-field{
+				height: 37px;
+				width: 177px;
+				border-radius: 50px;
+				border: 0;
+				padding-left: 25px;
+				font-size: 12px;
+				@include respond-to(retina){
+					margin-top: 46px;
+					height: 75px;
+					width: 354px;
+					border-radius: 100px;
+					padding-left: 50px;
+					font-size: 24px;
+				}
 			}
 		}
+
 	}
 }

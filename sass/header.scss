@@ -58,32 +58,34 @@ header{
 				}
 			}
 		}
-		.main-menu{
-			padding-bottom: 40px;
-			display: inline-block;
-			@include respond-to(retina){
-				padding:0 0 60px 80px;
-			}
-			li{
+		.navigation{
+			.menu{
+				padding-bottom: 40px;
 				display: inline-block;
-				padding-right: 40px;
 				@include respond-to(retina){
-					padding-right: 80px;
+					padding:0 0 60px 80px;
 				}
-				a{
-					color: #fff;
-					text-decoration: none;
-					text-transform: uppercase;
-					font-weight: bold;
-					font-size: 12px;
+				li{
+					display: inline-block;
+					padding-right: 40px;
 					@include respond-to(retina){
-						font-size: 24px;
+						padding-right: 80px;
 					}
-					&.active,&:hover{
+					&.current-menu-item a, a:hover{
 						padding-bottom: 12px;
 						border-bottom: 2px solid  #fff;
 						@include respond-to(retina){
 							padding-bottom: 24px;
+						}
+					}
+					a{
+						color: #fff;
+						text-decoration: none;
+						text-transform: uppercase;
+						font-weight: bold;
+						font-size: 12px;
+						@include respond-to(retina){
+							font-size: 24px;
 						}
 					}
 				}

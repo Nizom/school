@@ -18,7 +18,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="form contacts">
+	<?php
+	 // echo do_shortcode('[contact-form-7 id="101" title="Задать вопрос" html_class="form contacts"]');
+	echo do_shortcode('[contact-form-7 id="64" title="Задать вопрос" html_class="form contacts"]');
+	?>
+<!-- 	<div class="form contacts">
 	 	<form action="" id="contacts-form">
 		 	<div class="form-wrap">
 			 	<p class="form-title">Задать вопрос</p>
@@ -28,5 +32,5 @@
 			 	<input type="submit" id="edit-submit" name="contacts-form" value="Отправить заявку" class="form-submit">
 			</div>
 		</form>
-	 </div>
+	 </div> -->
 </div>

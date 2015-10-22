@@ -18,13 +18,14 @@
 				<p class="worktime">с 10:00 до 21:00, Воскресение — выходной</p>
 			</div>
 		<div class="make-order"><a href="#front-form" class="order">Сделать заявку</a></div>
-			<ul class="main-menu">
+			<?php wp_nav_menu( array( 'theme_location' => 'header_menu','container' => 'nav', 'container_class' => 'navigation') );?>
+		<!-- 	<ul class="main-menu">
 				<li><a class="active" href="/">Главная</a></li>
 				<li><a href="/staff-all">О школе</a></li>
 				<li><a href="/">Специальности</a></li>
 				<li><a href="/">Трудоустройство</a></li>
-				<li><a href="/photo-gallery.php">Фотогалерея</a></li>
+				<li><a href="/photogallery">Фотогалерея</a></li>
 				<li><a href="/contacts">Контакты</a></li>
-			</ul>
+			</ul> -->
 		</div>
 		</header>

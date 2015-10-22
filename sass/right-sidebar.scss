@@ -161,10 +161,10 @@
 		.diplom-education{
 			text-align: center;
 			.education-image{
+				width: 50%;
 				margin: 15px 0 10px 0;
 				@include respond-to(retina){
 					margin: 30px 0 20px 0;
-					width: 50%;
 				}
 			}
 			.blue-title{

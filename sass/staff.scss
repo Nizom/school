@@ -1,25 +1,47 @@
 .staff-wrapper{
 	h1{
 		margin-bottom: 25px;
+		@include respond-to(retina){
+			margin-bottom: 50px;
+		}
 	}
 	.content{
 		.staff-wrap{
 			margin-bottom: 60px;
+			@include respond-to(retina){
+				margin-bottom: 120px;
+			}
 			.staff-item{
 				display: inline-block;
 				height: 255px;
 				width: 228px;
 				margin-bottom: 10px;
 				vertical-align: top;
+				@include respond-to(retina){
+					height: 510px;
+					width: 456px;
+					margin-bottom: 20px;
+				}
 				.image-wrap{
 					width: 122px;
 					height: 122px;
 					margin: 0 auto 0 auto;
 					padding-top: 65px;
+					@include respond-to(retina){
+						width: 244px;
+						height: 244px;
+						padding-top: 130px;
+					}
+					img{
+						height: 100%;
+					}
 				}
 				.staff-name{
 					text-align: center;
 					font-size: 15px;
+					@include respond-to(retina){
+						font-size: 30px;
+					}
 				}
 				.more{
 					display: none;
@@ -28,6 +50,9 @@
 					color: #0052c2;
 					text-decoration: none;
 					font-weight: 500;
+					@include respond-to(retina){
+						font-size: 30px;
+					}
 				}
 				&:hover{
 					border-radius: 3px;
@@ -36,6 +61,9 @@
 					box-shadow: 0 0 100px rgba(0,0,0,.2);
 					.image-wrap{
 						padding-top: 25px;
+						@include respond-to(retina){
+							padding-top: 50px;
+						}
 					}
 					.more{
 						display: block;

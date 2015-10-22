@@ -20,41 +20,6 @@ get_header();
 				<p class="staff-name"><?php the_title(); ?></p>
 				<a href="<?php the_permalink() ?>" class="more">Подробнее</a>
 			</div>	
-			<!-- <div class="staff-item">
-				<div class="image-wrap">
-					<img src="/images/staff-image-1.png" alt="" class="staff-photo full-size">
-				</div>
-				<p class="staff-name">Васильев<br>Сергей Александрович</p>
-				<a href="#more" class="more">Подробнее</a>
-			</div>
-			<div class="staff-item">
-				<div class="image-wrap">
-					<img src="/images/staff-image-1.png" alt="" class="staff-photo full-size">
-				</div>
-				<p class="staff-name">Васильев<br>Сергей Александрович</p>
-				<a href="#more" class="more">Подробнее</a>
-			</div>
-			<div class="staff-item">
-				<div class="image-wrap">
-					<img src="/images/staff-image-1.png" alt="" class="staff-photo full-size">
-				</div>
-				<p class="staff-name">Васильев<br>Сергей Александрович</p>
-				<a href="#more" class="more">Подробнее</a>
-			</div>
-			<div class="staff-item">
-				<div class="image-wrap">
-					<img src="/images/staff-image-1.png" alt="" class="staff-photo full-size">
-				</div>
-				<p class="staff-name">Васильев<br>Сергей Александрович</p>
-				<a href="#more" class="more">Подробнее</a>
-			</div>
-			<div class="staff-item">
-				<div class="image-wrap">
-					<img src="/images/staff-image-1.png" alt="" class="staff-photo full-size">
-				</div>
-				<p class="staff-name">Васильев<br>Сергей Александрович</p>
-				<a href="#more" class="more">Подробнее</a>
-			</div>	 -->
 
 			<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>	 
