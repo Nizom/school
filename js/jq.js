@@ -11,7 +11,8 @@ $(document).ready(function(){
 		$(".quick-tabs-container").hide();
 		$("#tab_" + tab).show();
     });
-
-
-   // $('select').find("option[value='Выберите специальность']").attr('disabled','disabled');
+    $(".order").on('click', function(){
+        $('.form.popup').bPopup();
+    });
+    $('select').find("option[value='Выберите специальность']").attr('disabled','disabled');
 });

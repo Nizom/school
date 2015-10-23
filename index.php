@@ -3,7 +3,8 @@ get_header();
 ?>
 <div class="content-wrapper front">
 	<div class="content">
-		<div class="slider fotorama" data-width="100%"
+		<?php echo do_shortcode('[slider]'); ?>
+<!-- 		<div class="slider fotorama" data-width="100%"
      data-height="418px">
 			<div>
 				<img src="<?=get_template_directory_uri()?>/images/slider.png" alt="" class="slider-image image full-size">
@@ -14,8 +15,8 @@ get_header();
 				<img src="<?=get_template_directory_uri()?>/images/slider.png" alt="" class="slider-image image full-size">
 				<p class="slider-text">Выпускные работы факультета<br>ландшафтного дизайна</p>
 				<p class="slider-date">20 ноября 2015</p>
-			</div>
-		</div>
+			</div> -->
+		<!-- </div> -->
 		<div class="our-speciality">
 			<p class="title-block">Наши специальности</p>
 			<div class="quick-tabs">
@@ -30,8 +31,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -41,8 +42,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-2-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-2-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -52,8 +53,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-3-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-3-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -63,8 +64,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-4-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-4-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -74,8 +75,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-5-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-5-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -85,8 +86,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-6-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-6-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -96,8 +97,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-7-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-7-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -107,8 +108,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-8-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-8-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -118,8 +119,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-9-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-9-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -132,8 +133,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -143,8 +144,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -154,8 +155,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -165,8 +166,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -176,8 +177,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -187,8 +188,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -198,8 +199,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -209,8 +210,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -220,8 +221,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -234,8 +235,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -245,8 +246,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -256,8 +257,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -267,8 +268,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -278,8 +279,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -289,8 +290,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -300,8 +301,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -311,8 +312,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>
@@ -322,8 +323,8 @@ get_header();
 						<a href="/specialization/manager-po-personalu-i-kadram/">
 							<div class="qt-wrap">
 							<div class="image-wrap">
-								<img class="image show" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-show.png" alt="">
-								<img class="image hover" src="<?=get_template_directory_uri()?>/images/quick-tabs-item-image-hover.png" alt="">
+								<img class="image show" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-show.png" alt="">
+								<img class="image hover" src="<?=get_template_directory_uri()?>/images/qt-icons/quick-tabs-item-image-1-hover.png" alt="">
 							</div>
 							<p>Логистика<br>+ 1С торговля и склад</p>
 						</div>

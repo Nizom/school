@@ -12,6 +12,10 @@
 				</div>
 			</div>
 		</footer>
+		<?php
+			echo do_shortcode('[contact-form-7 id="68" title="Задать вопрос" html_class="form contacts popup"]');
+			// echo do_shortcode('[contact-form-7 id="106" title="Задать вопрос" html_class="form contacts popup"]');
+		?>
 	</div>
 	<?php wp_footer(); ?>
 </body>
