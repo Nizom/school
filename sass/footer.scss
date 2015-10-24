@@ -1,6 +1,26 @@
+html, body, .wrapper,.content-wrapper { 
+	height: 100%; 
+}
+body > .wrapper {
+	height: auto; min-height: 100%;
+    position: relative;
+    padding-bottom: 173px;
+    box-sizing: border-box;
+	@include respond-to(retina){
+		padding-bottom: 346px;
+	}
+}
+footer { 
+	position: absolute;
+    bottom: 0;
+	height: 173px;
+	@include respond-to(retina){
+		height: 346px;
+	}
+}
 footer{
 	background-color: #1d1f21;
-	clear: both;
+    width: 100%;
 	.footer{
 		width: $width;
 		margin: 0 auto;

@@ -42,6 +42,25 @@ h1 {
       font-size: 50px;
       margin: 0 0 80px 0; } }
 
+/* CLEAR FIX*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* End hide from IE-mac */
 header {
   background-color: #4b0c09;
   padding-top: 40px; }
@@ -156,9 +175,30 @@ header {
             padding-top: 17px;
             font-size: 26px; } }
 
+html, body, .wrapper, .content-wrapper {
+  height: 100%; }
+
+body > .wrapper {
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 173px;
+  box-sizing: border-box; }
+  @media only screen and (min-width: 2320px) {
+    body > .wrapper {
+      padding-bottom: 346px; } }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 173px; }
+  @media only screen and (min-width: 2320px) {
+    footer {
+      height: 346px; } }
+
 footer {
   background-color: #1d1f21;
-  clear: both; }
+  width: 100%; }
   footer .footer {
     width: 1160px;
     margin: 0 auto;

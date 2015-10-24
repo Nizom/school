@@ -8,7 +8,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<div class="wrapper">
+	<div class="wrapper clearfix">
 		<header>
 		<div class="header">
 			<a class="logo" href="/"><img class="image" src="<?=get_template_directory_uri()?>/images/logo.png" alt=""></a>
