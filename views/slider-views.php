@@ -1,7 +1,7 @@
 <?php $slider = new WP_Query( array( 'post_type' => 'slider', 'posts_per_page' => 24 ) ); ?>
 
 <div class="slider fotorama"
-data-width="852px"
+data-width="100%"
 data-height="418px"
 >
 <?php while ( $slider->have_posts() ) : $slider->the_post(); ?>
