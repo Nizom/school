@@ -5,13 +5,11 @@ body {
 p, a, span, div {
   font-family: "Roboto"; }
 
-img {
+img.retina {
   width: 100%; }
   @media only screen and (min-width: 2320px) {
-    img {
+    img.retina {
       width: 100%; } }
-  img.full-size {
-    width: 100%; }
 
 img.no-resize {
   width: auto; }
@@ -66,7 +64,8 @@ h1 {
 /* End hide from IE-mac */
 header {
   background-color: #4b0c09;
-  padding-top: 40px; }
+  padding-top: 40px;
+  position: relative; }
   @media only screen and (min-width: 2320px) {
     header {
       padding-top: 80px; } }
@@ -177,6 +176,56 @@ header {
           header .header .make-order a {
             padding-top: 17px;
             font-size: 26px; } }
+    header .header .spec-menu {
+      font-size: 0;
+      position: absolute;
+      top: 142px;
+      width: 852px;
+      z-index: 10;
+      border-radius: 3px;
+      background-clip: padding-box;
+      background-color: #fff;
+      box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15); }
+      @media only screen and (min-width: 2320px) {
+        header .header .spec-menu {
+          width: 1704px;
+          top: 284px; } }
+      header .header .spec-menu .form-wrap {
+        width: 50%;
+        height: 100%;
+        vertical-align: top;
+        display: inline-block;
+        padding: 25px 30px 30px 30px;
+        box-sizing: border-box; }
+        @media only screen and (min-width: 2320px) {
+          header .header .spec-menu .form-wrap {
+            padding: 50px 60px 60px 60px; } }
+        header .header .spec-menu .form-wrap .title {
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-top: 0; }
+          @media only screen and (min-width: 2320px) {
+            header .header .spec-menu .form-wrap .title {
+              font-size: 28px; } }
+        header .header .spec-menu .form-wrap .spec-link {
+          padding-bottom: 15px; }
+          @media only screen and (min-width: 2320px) {
+            header .header .spec-menu .form-wrap .spec-link {
+              padding-bottom: 30px; } }
+        header .header .spec-menu .form-wrap:nth-child(2) {
+          background-color: #f2f2f2; }
+        header .header .spec-menu .form-wrap .spec-link {
+          width: 50%;
+          display: inline-block; }
+          header .header .spec-menu .form-wrap .spec-link a {
+            color: #4b0c09;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none; }
+            @media only screen and (min-width: 2320px) {
+              header .header .spec-menu .form-wrap .spec-link a {
+                font-size: 28px; } }
 
 html, body, .wrapper, .content-wrapper {
   height: 100%; }
@@ -968,6 +1017,10 @@ footer {
           color: #a5a5a5; }
 .contacts-wrapper .form.contacts .form-wrap {
   text-align: center; }
+.contacts-wrapper .form.contacts .your-message {
+  float: right; }
+  .contacts-wrapper .form.contacts .your-message textarea {
+    float: none; }
 
 .spec-wrapper h1 {
   margin-bottom: 0; }

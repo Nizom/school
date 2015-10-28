@@ -1,6 +1,7 @@
 header{
 	background-color: #4b0c09;
 	padding-top: 40px;
+	position: relative;
 	@include respond-to(retina){
 		padding-top: 80px;	
 	}
@@ -91,6 +92,7 @@ header{
 				}
 			}
 		}
+
 		.make-order{
 			width: 150px;
 			height: 34px;
@@ -124,5 +126,65 @@ header{
 				}
 			}
 		}
-	}
+		.spec-menu{
+			font-size: 0;
+			position: absolute;
+			top: 142px;
+			width: 852px;
+			// height: 213px;
+			z-index: 10;
+			border-radius: 3px;
+			background-clip: padding-box;
+			background-color: #fff;
+			box-shadow: 0 15px 30px 0 rgba(0,0,0,.15);
+			@include respond-to(retina){
+				width: 1704px;
+				top: 284px;
+				// height: 427px;
+			}
+			.form-wrap{
+				width: 50%;
+				height: 100%;
+				vertical-align: top;
+				display: inline-block;
+				padding: 25px 30px 30px 30px;
+				box-sizing: border-box;
+				@include respond-to(retina){
+					//width: 48px;
+					padding: 50px 60px 60px 60px;
+				}
+				.title{
+					font-size: 14px;
+					font-weight: bold;
+					text-transform: uppercase;
+					margin-top: 0;
+					@include respond-to(retina){
+						font-size: 28px;
+					}
+				}
+				.spec-link{
+					padding-bottom: 15px;
+					@include respond-to(retina){
+						padding-bottom: 30px;
+					}
+				}
+				&:nth-child(2){
+					background-color: #f2f2f2;
+				}
+				.spec-link{
+					width: 50%;
+					display: inline-block;
+					a{
+						color: #4b0c09;
+						font-size: 14px;
+						font-weight: 500;
+						text-decoration: none;
+						@include respond-to(retina){
+							font-size: 28px;
+						}
+					}
+				}
+			}
+		}
+	}	
 }

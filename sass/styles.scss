@@ -20,14 +20,10 @@ body{
 p, a, span, div{
 	font-family: "Roboto";
 }
-img{
+img.retina{
 	width: 100%;
 	@include respond-to(retina){
 		width: 100%;
-	}
-	&.full-size{
-		width: 100%;
-
 	}
 }
 img.no-resize{

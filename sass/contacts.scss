@@ -50,5 +50,11 @@
 		.form-wrap{
 			text-align: center;
 		}
+		.your-message{
+			float: right;
+			textarea{
+				float: none;
+			}
+		}
 	}
 }
