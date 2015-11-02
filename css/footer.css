@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'respond-to'.
-        on line 9 of sass/footer.scss, in `respond-to'
-        from line 9 of sass/footer.scss
+        on line 10 of sass/footer.scss, in `respond-to'
+        from line 10 of sass/footer.scss
 
-4: body > .wrapper {
-5: 	height: auto; min-height: 100%;
-6:     position: relative;
-7:     padding-bottom: 173px;
-8:     box-sizing: border-box;
-9: 	@include respond-to(retina){
-10: 		padding-bottom: 346px;
-11: 	}
-12: }
-13: footer { 
-14: 	position: absolute;
+5: body > .wrapper {
+6: 	height: auto; min-height: 100%;
+7:     position: relative;
+8:     padding-bottom: 173px;
+9:     box-sizing: border-box;
+10: 	@include respond-to(retina){
+11: 		padding-bottom: 346px;
+12: 	}
+13: }
+14: footer.main { 
+15: 	position: absolute;
 
 Backtrace:
-sass/footer.scss:9:in `respond-to'
-sass/footer.scss:9
+sass/footer.scss:10:in `respond-to'
+sass/footer.scss:10
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
@@ -71,4 +71,4 @@ C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond-to'.\A         on line 9 of sass/footer.scss, in `respond-to'\A         from line 9 of sass/footer.scss\A \A 4: body > .wrapper {\A 5: 	height: auto; min-height: 100%;\A 6:     position: relative;\A 7:     padding-bottom: 173px;\A 8:     box-sizing: border-box;\A 9: 	@include respond-to(retina){\A 10: 		padding-bottom: 346px;\A 11: 	}\A 12: }\A 13: footer { \A 14: 	position: absolute;"; }
+  content: "Error: Undefined mixin 'respond-to'.\A         on line 10 of sass/footer.scss, in `respond-to'\A         from line 10 of sass/footer.scss\A \A 5: body > .wrapper {\A 6: 	height: auto; min-height: 100%;\A 7:     position: relative;\A 8:     padding-bottom: 173px;\A 9:     box-sizing: border-box;\A 10: 	@include respond-to(retina){\A 11: 		padding-bottom: 346px;\A 12: 	}\A 13: }\A 14: footer.main { \A 15: 	position: absolute;"; }

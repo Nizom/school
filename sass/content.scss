@@ -1,5 +1,14 @@
 
 .content-wrapper.front{
+	&.phone{
+		// width: 320px;
+		width: 100%;
+		padding: 3%;
+		.content{
+			// width: 320px;
+			width: 100%;
+		}
+	}
 	.content{
 		width: 852px;
 		@include respond-to(retina){
@@ -14,6 +23,11 @@
 	@include respond-to(retina){
 		width: $width-retina;
 		margin-top: 80px;
+	}
+	&.phone{
+		// width: 320px;
+		width: 100%;
+		padding: 0 20px;
 	}
 	.content{
 		//width: 852px;
@@ -231,6 +245,7 @@
 					p{
 						color: #0052c2;
 						font-size: 14px;
+						font-weight: 500;
 						@include respond-to(retina){
 							font-size: 28px;
 						}
@@ -293,6 +308,40 @@
 					margin: 0 0 40px 0;
 				}
 			}
+			.ui-selectmenu-button{
+				padding: 15px;
+				width: 363px !important;
+				height: 55px;
+				box-sizing: border-box;
+				margin-bottom: 15px;
+				font-size: 14px;
+				font-weight: lighter;
+				color: #1d1f21;
+				background: #fff;
+				border: 1px solid #fff;
+				border-radius: 0px;
+				float: left;
+				@include respond-to(retina){
+					padding: 30px;
+					width: 726px !important;
+					height: 110px;
+					margin-bottom: 30px;
+					font-size: 28px;
+				}
+				.ui-selectmenu-text{
+					padding: 0;
+					line-height: normal;
+					color: black;
+				    font-weight: 400;
+				    font: 14px Arial;
+				    position: relative;
+				    top: 5px;
+				    @include respond-to(retina){
+				    	font-size: 28px;
+				    	top: 10px;
+				    }
+				}
+			}
 			.form-input-text,.form-input-select{
 				padding: 15px;
 				width: 363px;
@@ -309,6 +358,23 @@
 					margin-bottom: 30px;
 					font-size: 28px;
 				}
+			}
+			.hidden-input{
+				display: none;
+			}
+			.wpcf7-not-valid{
+				background-color: rgba(255,182,193,.7);
+				color: #fff !important;
+				&::-webkit-input-placeholder {color:#fff;}
+				&::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+				&:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+				&:-ms-input-placeholder      {color:#fff;}
+				.ui-selectmenu-text{
+					color: #fff;
+				}
+			}
+			.wpcf7-not-valid-tip{
+				display: none;
 			}
 			.form-input-select{
 				padding: 10px;
@@ -335,6 +401,7 @@
 					font-size: 28px;
 				}
 			}
+
 			.form-submit{
 				width: 175px;
 				height: 37px;
@@ -366,7 +433,9 @@
 			}
 		}
 		.wpcf7-response-output{
-			display: none !important;
+			display: none;
+			color: #fff;
+			border: 0;
 		}
 	}
 	.ajax-loader{
@@ -405,7 +474,7 @@
 					margin: 0 0 40px 0;
 				}
 			}
-			.form-input-text,.form-input-select{
+			.form-input-text,.form-input-select {
 				padding: 15px;
 				width: 363px;
 				height: 55px;
@@ -422,6 +491,23 @@
 					font-size: 28px;
 				}
 			}
+			.hidden-input{
+				display: none;
+			}
+			.wpcf7-not-valid{
+				background-color: rgba(255,182,193,.7) !important;
+				color: #fff !important;
+				&::-webkit-input-placeholder {color:#fff;}
+				&::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+				&:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+				&:-ms-input-placeholder      {color:#fff;}
+				.ui-selectmenu-text{
+					color: #fff;
+				}
+			}
+			.wpcf7-not-valid-tip{
+				display: none;
+			}
 			.form-input-select{
 				padding: 10px;
 				float: left;
@@ -429,7 +515,40 @@
 					padding: 10px;
 				}
 			}
-
+			.ui-selectmenu-button{
+				padding: 15px;
+				width: 363px !important;
+				height: 55px;
+				box-sizing: border-box;
+				margin-bottom: 15px;
+				font-size: 14px;
+				font-weight: lighter;
+				color: #1d1f21;
+				background: #fff;
+				border: 1px solid #fff;
+				border-radius: 0px;
+				float: left;
+				@include respond-to(retina){
+					padding: 30px;
+					width: 726px !important;
+					height: 110px;
+					margin-bottom: 30px;
+					font-size: 28px;
+				}
+				.ui-selectmenu-text{
+					padding: 0;
+					line-height: normal;
+					color: black;
+				    font-weight: 400;
+				    font: 14px Arial;
+				    position: relative;
+				    top: 5px;
+				    @include respond-to(retina){
+				    	font-size: 28px;
+				    	top: 10px;
+				    }
+				}
+			}
 			.form-textarea{
 				float: right;
 				width: 387px;
@@ -481,7 +600,262 @@
 			display: none !important;
 		}
 	}
-	.ajax-loader{
-		display: none;
+}
+.ajax-loader{
+	display: none;
+}
+.ui-front.ui-selectmenu-open{
+	z-index: 10000;
+}
+.ui-selectmenu-menu {
+	li{
+		height: 45px;
+		padding: 10px !important;
+		box-sizing: border-box;
+		@include respond-to(retina){
+			padding: 20px !important;
+			height: 90px;
+			font-size: 2em;
+		}
 	}
 }
+
+.our-speciality-phone{
+	// width: 320px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	.title-block{
+		font-size: 25px;
+		font-weight: 500;
+		@include respond-to(retina){
+			font-size: 50px;
+		}
+	}
+	.quick-tabs-links{
+		padding-left: 0;
+		li{
+			list-style: none;
+			display: inline-block;
+			font-size: 20px;
+			margin-right: 30px;
+			@include respond-to(retina){
+				font-size: 40px;
+				margin-right: 60px;
+			}
+			a{
+				font-size: 20px;
+				color: #0052c2;
+				font-weight: 500;
+				text-decoration: none;
+				background-image: url(../images/quick-tabs-link-bg.png);
+				background-repeat: repeat-x;
+				padding-bottom: 3px;
+			    background-position: 0px 25px;
+			    @include respond-to(retina){
+			    	font-size: 40px;
+			    	padding-bottom: 6px;
+			    	background-position: 0 50px;
+			    }	
+			}
+			&.active{
+				a{
+					pointer-events: none;
+					cursor: default;
+					color: #000;
+					background-image: none;
+				}
+			}
+		}
+	}
+	.quick-tabs-item{
+		a{
+			text-decoration: none;
+		}
+		.qt-wrap{
+			padding: 35px 0 20px 0;
+		}
+		// width: 270px;
+		width: 85%;
+		// height: 213px;
+		display: inline-block;
+		text-align: center;
+		background-color: #fff;
+		vertical-align: top;
+		
+		@include respond-to(retina){
+			width: 426px;
+			height: 426px;
+		}
+		.image-wrap{
+			box-sizing: border-box;
+			width: 90px;
+			height: 90px;
+			display: block;
+			box-shadow: 0 10px 50px rgba(0,0,0,.15);
+			border-radius: 50px;
+			text-align: center;
+			margin: 0 auto 0 auto;
+			@include respond-to(retina){
+				width: 180px;
+				height: 180px;
+				margin: 70px auto 20px auto;
+				border-radius: 100px;
+			}
+			img{
+				margin: 30px auto 0 auto;
+				width: 50%;
+				width: 32px;
+				height: 32px;
+				@include respond-to(retina){
+					width: 64px;
+					height: 64px;
+					margin: 60px auto 0 auto;
+				}
+				&.hover{
+					display: none;
+					width: 32px;
+					height: 32px;
+					@include respond-to(retina){
+						width: 64px;
+						height: 64px;
+					}
+				}
+			}
+		}
+
+		p{
+			color: #0052c2;
+			font-size: 14px;
+			font-weight: 500;
+			@include respond-to(retina){
+				font-size: 28px;
+			}
+		}
+		&:nth-child(3n){
+			background-color: #f9f9f9;
+		}
+		&:nth-child(3n-2){
+			background-color: #ededed;
+		}
+		&:hover{
+			background-color: #4b0c09;
+			p{
+				color: #fff;
+			}
+			.image-wrap{
+				border: 2px solid #fff;
+				width: 92px;
+				height: 92px;
+				@include respond-to(retina){
+					border: 4px solid #fff;
+					width: 184px;
+					height: 184px;
+				}
+				.show{
+					display: none;
+				}
+				.hover{
+					display: block;
+				}
+			}
+		}
+	}
+}
+.backcall-title{
+	// width: 320px;
+	width: 100%;
+	margin: 30px auto 18px auto;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+}
+.form.phone{
+	// width: 270px;
+	width: 90%;
+	height: 152px;
+	margin: 0 auto;
+	background-color: #4b0c09;
+	padding: 21px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	text-align: center;
+	p{
+		margin: 0;
+	}
+	input[type="text"]{
+		// width: 228px;
+		width: 90%;
+		height: 53px;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.form-submit{
+		width: 175px;
+		height: 37px;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		border: 2px solid #e7e7e7;
+		border-radius: 37px;
+		background-clip: padding-box;
+		background-color: rgba(255,255,255,.1);
+		margin:20px 0 0 0;
+		background-color: #5d2522;
+		text-transform: uppercase;
+		color: #fff;
+		//padding-top: 9px;
+		font-size: 13px;
+		cursor: pointer;
+	}
+	.wpcf7-not-valid-tip{
+		display: none;
+	}
+	.wpcf7-not-valid{
+		background-color: rgba(255,182,193,.7);
+		color: #fff !important;
+		&::-webkit-input-placeholder {color:#fff;}
+		&::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+		&:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+		&:-ms-input-placeholder      {color:#fff;}
+		.ui-selectmenu-text{
+			color: #fff;
+		}
+	}
+	.wpcf7-response-output{
+		display: none !important;
+	}
+}
+.wrapper-for-menu{
+	// width: 320px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+	.phone-menu{
+		width: 250px;
+		background-color: #1d1f21;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		display: none;
+		ul{
+			li{
+				padding:5px;
+				list-style: none;
+				list-style-image: none;
+				a{
+					color: #fff;
+					font-size: 20px;
+					text-decoration: none;
+					padding:5px;
+				}
+			}
+		}
+	}
+}
+// .phone-wrap{
+// 	max-width: 320px;
+// }

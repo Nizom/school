@@ -1,7 +1,6 @@
-<div class="content-wrapper contacts-wrapper">
+<div class="contacts-wrapper <?php if (wpmd_is_phone() and ($_COOKIE["front"])!="1") {echo "phone";} ?>">
     <div id="map" class="ya-map"></div>
 	<div class="content">
-		<h1>Контакты</h1>
 		<div class="contacts">
 			<div class="item">
 				<p class="title">Адрес</p>
@@ -19,18 +18,12 @@
 		</div>
 	</div>
 	<?php
-	 // echo do_shortcode('[contact-form-7 id="101" title="Задать вопрос" html_class="form contacts"]');
-	echo do_shortcode('[contact-form-7 id="64" title="Задать вопрос" html_class="form contacts"]');
+	if (wpmd_is_notphone()or$_COOKIE["front"]) {
+	echo do_shortcode('[contact-form-7 id="101" title="Задать вопрос" html_class="form contacts"]');
+	}
+	// echo do_shortcode('[contact-form-7 id="64" title="Задать вопрос" html_class="form contacts"]');
 	?>
-<!-- 	<div class="form contacts">
-	 	<form action="" id="contacts-form">
-		 	<div class="form-wrap">
-			 	<p class="form-title">Задать вопрос</p>
-			 	<input type="text" class="form-input-text" placeholder="Ваше имя">
-			 	<textarea name="message" id="" cols="30" rows="10" class="form-textarea" placeholder="Сообщение"></textarea>
-			 	<input type="text" class="form-input-text" placeholder="Почта или телефон для ответа">
-			 	<input type="submit" id="edit-submit" name="contacts-form" value="Отправить заявку" class="form-submit">
-			</div>
-		</form>
-	 </div> -->
+	<?php if (wpmd_is_phone() and ($_COOKIE["front"])!="1") {  
+	 echo do_shortcode('[contact-form-7 id="143" html_class="form phone"]');
+	 }?>
 </div>

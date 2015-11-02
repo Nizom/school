@@ -1,6 +1,34 @@
 .spec-wrapper{
+	&.phone{
+		padding: 0 20px;
+		.spec-diplom{
+			height: auto;
+			text-align: center;
+			padding: 0;
+			.diplom-block{
+				width: 30%;
+				margin-right: 0px;
+				img{
+					width: 80%;
+					height: auto;
+				}
+			}
+			.cost-block{
+				width: 33%;
+				margin-right: 0px;
+			}
+			.employment-block{
+				width: 33%;
+				img.spec{
+					width: 40%;
+					height: auto;
+				}
+			}
+		}
+	}
 	h1{
 		margin-bottom: 0;
+		
 	}
 	.course-time{
 		margin: 12.5px 0 20px 0;

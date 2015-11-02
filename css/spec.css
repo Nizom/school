@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'respond-to'.
-        on line 8 of sass/spec.scss, in `respond-to'
-        from line 8 of sass/spec.scss
+        on line 36 of sass/spec.scss, in `respond-to'
+        from line 36 of sass/spec.scss
 
-3: 		margin-bottom: 0;
-4: 	}
-5: 	.course-time{
-6: 		margin: 12.5px 0 20px 0;
-7: 		font-size: 20px;
-8: 		@include respond-to(retina){
-9: 			margin: 25px 0 40px 0;
-10: 			font-size: 40px;
-11: 		}
-12: 	}
-13: 	.spec-diplom{
+31: 		
+32: 	}
+33: 	.course-time{
+34: 		margin: 12.5px 0 20px 0;
+35: 		font-size: 20px;
+36: 		@include respond-to(retina){
+37: 			margin: 25px 0 40px 0;
+38: 			font-size: 40px;
+39: 		}
+40: 	}
+41: 	.spec-diplom{
 
 Backtrace:
-sass/spec.scss:8:in `respond-to'
-sass/spec.scss:8
+sass/spec.scss:36:in `respond-to'
+sass/spec.scss:36
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
@@ -82,4 +82,4 @@ C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond-to'.\A         on line 8 of sass/spec.scss, in `respond-to'\A         from line 8 of sass/spec.scss\A \A 3: 		margin-bottom: 0;\A 4: 	}\A 5: 	.course-time{\A 6: 		margin: 12.5px 0 20px 0;\A 7: 		font-size: 20px;\A 8: 		@include respond-to(retina){\A 9: 			margin: 25px 0 40px 0;\A 10: 			font-size: 40px;\A 11: 		}\A 12: 	}\A 13: 	.spec-diplom{"; }
+  content: "Error: Undefined mixin 'respond-to'.\A         on line 36 of sass/spec.scss, in `respond-to'\A         from line 36 of sass/spec.scss\A \A 31: 		\A 32: 	}\A 33: 	.course-time{\A 34: 		margin: 12.5px 0 20px 0;\A 35: 		font-size: 20px;\A 36: 		@include respond-to(retina){\A 37: 			margin: 25px 0 40px 0;\A 38: 			font-size: 40px;\A 39: 		}\A 40: 	}\A 41: 	.spec-diplom{"; }

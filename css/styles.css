@@ -62,27 +62,27 @@ h1 {
   display: block; }
 
 /* End hide from IE-mac */
-header {
+header.main {
   background-color: #4b0c09;
   padding-top: 40px;
   position: relative; }
   @media only screen and (min-width: 2320px) {
-    header {
+    header.main {
       padding-top: 80px; } }
-  header .header {
+  header.main .header {
     font-family: "Roboto";
     width: 1160px;
     margin: 0 auto; }
     @media only screen and (min-width: 2320px) {
-      header .header {
+      header.main .header {
         width: 2320px; } }
-    header .header .logo {
+    header.main .header .logo {
       float: left;
       width: 97px; }
       @media only screen and (min-width: 2320px) {
-        header .header .logo {
+        header.main .header .logo {
           width: 194px; } }
-    header .header .site-description {
+    header.main .header .site-description {
       display: inline-block;
       position: relative;
       vertical-align: top;
@@ -94,58 +94,59 @@ header {
       width: 200px;
       line-height: 24px; }
       @media only screen and (min-width: 2320px) {
-        header .header .site-description {
+        header.main .header .site-description {
           line-height: 48px;
           width: 400px;
           margin: 0 500px 0 66px;
           font-size: 40px; } }
-    header .header .info {
+    header.main .header .info {
       display: inline-block;
       vertical-align: top;
       text-align: right;
       color: #fff; }
-      header .header .info .phones {
+      header.main .header .info .phones {
         font-size: 15px;
         margin: 0 0 10px 0; }
         @media only screen and (min-width: 2320px) {
-          header .header .info .phones {
+          header.main .header .info .phones {
             margin: 0 0 20px 0;
             font-size: 30px; } }
-      header .header .info .worktime {
+      header.main .header .info .worktime {
         font-weight: lighter;
         font-size: 12px;
         margin: 0; }
         @media only screen and (min-width: 2320px) {
-          header .header .info .worktime {
+          header.main .header .info .worktime {
             font-size: 24px; } }
-    header .header .navigation .menu {
-      padding-bottom: 40px;
+    header.main .header .navigation .menu {
+      margin: 0;
+      padding: 20px 0 40px 40px;
       display: inline-block; }
       @media only screen and (min-width: 2320px) {
-        header .header .navigation .menu {
-          padding: 0 0 60px 80px; } }
-      header .header .navigation .menu li {
+        header.main .header .navigation .menu {
+          padding: 40px 0 80px 80px; } }
+      header.main .header .navigation .menu li {
         display: inline-block;
         padding-right: 40px; }
         @media only screen and (min-width: 2320px) {
-          header .header .navigation .menu li {
+          header.main .header .navigation .menu li {
             padding-right: 80px; } }
-        header .header .navigation .menu li.current-menu-item a, header .header .navigation .menu li a:hover {
+        header.main .header .navigation .menu li.current-menu-item a, header.main .header .navigation .menu li a:hover {
           padding-bottom: 12px;
           border-bottom: 2px solid  #fff; }
           @media only screen and (min-width: 2320px) {
-            header .header .navigation .menu li.current-menu-item a, header .header .navigation .menu li a:hover {
+            header.main .header .navigation .menu li.current-menu-item a, header.main .header .navigation .menu li a:hover {
               padding-bottom: 24px; } }
-        header .header .navigation .menu li a {
+        header.main .header .navigation .menu li a {
           color: #fff;
           text-decoration: none;
           text-transform: uppercase;
           font-weight: bold;
           font-size: 12px; }
           @media only screen and (min-width: 2320px) {
-            header .header .navigation .menu li a {
+            header.main .header .navigation .menu li a {
               font-size: 24px; } }
-    header .header .make-order {
+    header.main .header .make-order {
       width: 150px;
       height: 34px;
       display: inline-block;
@@ -159,12 +160,12 @@ header {
       background-color: #5d2522;
       text-transform: uppercase; }
       @media only screen and (min-width: 2320px) {
-        header .header .make-order {
+        header.main .header .make-order {
           width: 300px;
           height: 68px;
           margin-left: 80px;
           border: 4px solid #e7e7e7; } }
-      header .header .make-order a {
+      header.main .header .make-order a {
         display: block;
         width: 100%;
         height: 100%;
@@ -173,10 +174,11 @@ header {
         padding-top: 9px;
         font-size: 13px; }
         @media only screen and (min-width: 2320px) {
-          header .header .make-order a {
+          header.main .header .make-order a {
             padding-top: 17px;
             font-size: 26px; } }
-    header .header .spec-menu {
+    header.main .header .spec-menu {
+      display: none;
       font-size: 0;
       position: absolute;
       top: 142px;
@@ -187,48 +189,90 @@ header {
       background-color: #fff;
       box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15); }
       @media only screen and (min-width: 2320px) {
-        header .header .spec-menu {
+        header.main .header .spec-menu {
           width: 1704px;
           top: 284px; } }
-      header .header .spec-menu .form-wrap {
+      header.main .header .spec-menu .absolute-magic {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 50%;
+        height: 100%;
+        background-color: #f2f2f2;
+        z-index: -1; }
+      header.main .header .spec-menu .form-wrap {
         width: 50%;
         height: 100%;
         vertical-align: top;
         display: inline-block;
-        padding: 25px 30px 30px 30px;
+        padding: 25px 30px 0px 30px;
         box-sizing: border-box; }
         @media only screen and (min-width: 2320px) {
-          header .header .spec-menu .form-wrap {
-            padding: 50px 60px 60px 60px; } }
-        header .header .spec-menu .form-wrap .title {
+          header.main .header .spec-menu .form-wrap {
+            padding: 50px 60px 0px 60px; } }
+        header.main .header .spec-menu .form-wrap .title {
           font-size: 14px;
           font-weight: bold;
           text-transform: uppercase;
           margin-top: 0; }
           @media only screen and (min-width: 2320px) {
-            header .header .spec-menu .form-wrap .title {
+            header.main .header .spec-menu .form-wrap .title {
               font-size: 28px; } }
-        header .header .spec-menu .form-wrap .spec-link {
-          padding-bottom: 15px; }
+        header.main .header .spec-menu .form-wrap .spec-link {
+          padding-bottom: 20px; }
           @media only screen and (min-width: 2320px) {
-            header .header .spec-menu .form-wrap .spec-link {
-              padding-bottom: 30px; } }
-        header .header .spec-menu .form-wrap:nth-child(2) {
+            header.main .header .spec-menu .form-wrap .spec-link {
+              padding-bottom: 40px; } }
+        header.main .header .spec-menu .form-wrap:nth-child(2) {
           background-color: #f2f2f2; }
-        header .header .spec-menu .form-wrap .spec-link {
+        header.main .header .spec-menu .form-wrap .spec-link {
           width: 50%;
           display: inline-block; }
-          header .header .spec-menu .form-wrap .spec-link a {
+          header.main .header .spec-menu .form-wrap .spec-link a {
             color: #4b0c09;
             font-size: 14px;
             font-weight: 500;
             text-decoration: none; }
             @media only screen and (min-width: 2320px) {
-              header .header .spec-menu .form-wrap .spec-link a {
+              header.main .header .spec-menu .form-wrap .spec-link a {
                 font-size: 28px; } }
 
-html, body, .wrapper, .content-wrapper {
-  height: 100%; }
+header.phone {
+  padding: 10px 0 20px 0;
+  background-color: #4b0c09; }
+  header.phone .header {
+    position: relative;
+    text-align: center;
+    margin: 0 auto; }
+    header.phone .header .logo {
+      display: block;
+      width: 73px;
+      margin: 0 auto; }
+    header.phone .header .site-description {
+      margin: 15px 0;
+      font-weight: bold;
+      font-size: 15px;
+      color: #fff;
+      text-transform: uppercase; }
+    header.phone .header .phones {
+      font-size: 15px;
+      color: #fff;
+      margin: 0; }
+    header.phone .header .phone-header-button {
+      position: absolute;
+      top: 25px;
+      left: 25px; }
+      header.phone .header .phone-header-button.active {
+        right: 25px;
+        left: initial; }
+      header.phone .header .phone-header-button img {
+        width: 17.5px;
+        height: 11px; }
+
+@media only screen and (min-width: 1000px) {
+  html, body, .wrapper, .wrapper .content-wrapper {
+    height: 100%; } }
 
 body > .wrapper {
   height: auto;
@@ -240,58 +284,59 @@ body > .wrapper {
     body > .wrapper {
       padding-bottom: 346px; } }
 
-footer {
+footer.main {
   position: absolute;
   bottom: 0;
   height: 173px; }
   @media only screen and (min-width: 2320px) {
-    footer {
+    footer.main {
       height: 346px; } }
 
-footer {
+footer.main {
   background-color: #1d1f21;
   width: 100%; }
-  footer .footer {
+  footer.main .footer {
     width: 1160px;
     margin: 0 auto;
     padding: 40px 0; }
     @media only screen and (min-width: 2320px) {
-      footer .footer {
+      footer.main .footer {
         width: 2320px;
         padding: 80px 0; } }
-    footer .footer .logo {
+    footer.main .footer .logo {
       display: inline-block;
       width: 97px; }
       @media only screen and (min-width: 2320px) {
-        footer .footer .logo {
+        footer.main .footer .logo {
           width: 194px; } }
-    footer .footer .info {
+    footer.main .footer .info {
       display: inline-block;
       vertical-align: top;
       text-align: left;
       color: #fff;
       margin: 23px 0 0 100px; }
       @media only screen and (min-width: 2320px) {
-        footer .footer .info {
+        footer.main .footer .info {
           margin: 46px 0 0 200px; } }
-      footer .footer .info .phones {
+      footer.main .footer .info .phones {
         font-size: 15px;
         margin: 0 0 10px 0; }
         @media only screen and (min-width: 2320px) {
-          footer .footer .info .phones {
+          footer.main .footer .info .phones {
             font-size: 30px;
             margin: 0 0 20px 0; } }
-      footer .footer .info .worktime {
+      footer.main .footer .info .worktime {
         font-weight: lighter;
         font-size: 12px;
         margin: 0; }
         @media only screen and (min-width: 2320px) {
-          footer .footer .info .worktime {
+          footer.main .footer .info .worktime {
             font-size: 24px; } }
-    footer .footer #searchform {
+    footer.main .footer #searchform {
       float: right;
-      margin-top: 23px; }
-      footer .footer #searchform .search-field {
+      margin-top: 23px;
+      position: relative; }
+      footer.main .footer #searchform .search-field {
         height: 37px;
         width: 177px;
         border-radius: 50px;
@@ -299,14 +344,52 @@ footer {
         padding-left: 25px;
         font-size: 12px; }
         @media only screen and (min-width: 2320px) {
-          footer .footer #searchform .search-field {
+          footer.main .footer #searchform .search-field {
             margin-top: 46px;
             height: 75px;
             width: 354px;
             border-radius: 100px;
             padding-left: 50px;
             font-size: 24px; } }
+      footer.main .footer #searchform img {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        width: 15px; }
+        @media only screen and (min-width: 2320px) {
+          footer.main .footer #searchform img {
+            top: 70px;
+            right: 30px;
+            width: 29px; } }
 
+footer.phone {
+  background-color: #1d1f21;
+  padding: 10px 0 20px 0; }
+  footer.phone .footer-wrap {
+    width: 320px;
+    text-align: center;
+    margin: 0 auto; }
+    footer.phone .footer-wrap .logo {
+      display: block;
+      width: 73px;
+      margin: 0 auto; }
+    footer.phone .footer-wrap .site-description {
+      margin: 15px 0;
+      font-weight: bold;
+      font-size: 15px;
+      color: #fff;
+      text-transform: uppercase; }
+    footer.phone .footer-wrap .full-link {
+      font-size: 14px;
+      font-weight: lighter;
+      color: #fff;
+      text-decoration: none; }
+
+.content-wrapper.front.phone {
+  width: 100%;
+  padding: 3%; }
+  .content-wrapper.front.phone .content {
+    width: 100%; }
 .content-wrapper.front .content {
   width: 852px; }
   @media only screen and (min-width: 2320px) {
@@ -321,6 +404,9 @@ footer {
     .content-wrapper {
       width: 2320px;
       margin-top: 80px; } }
+  .content-wrapper.phone {
+    width: 100%;
+    padding: 0 20px; }
   .content-wrapper .content {
     width: 100%;
     display: inline-block; }
@@ -497,7 +583,8 @@ footer {
                 margin: 60px auto 0 auto; } }
         .content-wrapper .content .our-speciality .quick-tabs-container .quick-tabs-item p, .content-wrapper .content .quick-tabs .quick-tabs-container .quick-tabs-item p {
           color: #0052c2;
-          font-size: 14px; }
+          font-size: 14px;
+          font-weight: 500; }
           @media only screen and (min-width: 2320px) {
             .content-wrapper .content .our-speciality .quick-tabs-container .quick-tabs-item p, .content-wrapper .content .quick-tabs .quick-tabs-container .quick-tabs-item p {
               font-size: 28px; } }
@@ -547,6 +634,38 @@ footer {
           .content-wrapper .form .form-wrap .form-title {
             font-size: 50px;
             margin: 0 0 40px 0; } }
+      .content-wrapper .form .form-wrap .ui-selectmenu-button {
+        padding: 15px;
+        width: 363px !important;
+        height: 55px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: lighter;
+        color: #1d1f21;
+        background: #fff;
+        border: 1px solid #fff;
+        border-radius: 0px;
+        float: left; }
+        @media only screen and (min-width: 2320px) {
+          .content-wrapper .form .form-wrap .ui-selectmenu-button {
+            padding: 30px;
+            width: 726px !important;
+            height: 110px;
+            margin-bottom: 30px;
+            font-size: 28px; } }
+        .content-wrapper .form .form-wrap .ui-selectmenu-button .ui-selectmenu-text {
+          padding: 0;
+          line-height: normal;
+          color: black;
+          font-weight: 400;
+          font: 14px Arial;
+          position: relative;
+          top: 5px; }
+          @media only screen and (min-width: 2320px) {
+            .content-wrapper .form .form-wrap .ui-selectmenu-button .ui-selectmenu-text {
+              font-size: 28px;
+              top: 10px; } }
       .content-wrapper .form .form-wrap .form-input-text, .content-wrapper .form .form-wrap .form-input-select {
         padding: 15px;
         width: 363px;
@@ -563,6 +682,25 @@ footer {
             height: 110px;
             margin-bottom: 30px;
             font-size: 28px; } }
+      .content-wrapper .form .form-wrap .hidden-input {
+        display: none; }
+      .content-wrapper .form .form-wrap .wpcf7-not-valid {
+        background-color: rgba(255, 182, 193, 0.7);
+        color: #fff !important;
+        /* Firefox 19+ */
+        /* Firefox 18- */ }
+        .content-wrapper .form .form-wrap .wpcf7-not-valid::-webkit-input-placeholder {
+          color: #fff; }
+        .content-wrapper .form .form-wrap .wpcf7-not-valid::-moz-placeholder {
+          color: #fff; }
+        .content-wrapper .form .form-wrap .wpcf7-not-valid:-moz-placeholder {
+          color: #fff; }
+        .content-wrapper .form .form-wrap .wpcf7-not-valid:-ms-input-placeholder {
+          color: #fff; }
+        .content-wrapper .form .form-wrap .wpcf7-not-valid .ui-selectmenu-text {
+          color: #fff; }
+      .content-wrapper .form .form-wrap .wpcf7-not-valid-tip {
+        display: none; }
       .content-wrapper .form .form-wrap .form-input-select {
         padding: 10px;
         float: left; }
@@ -611,7 +749,9 @@ footer {
       .content-wrapper .form .form-wrap span.wpcf7-not-valid-tip {
         color: #fff; }
     .content-wrapper .form .wpcf7-response-output {
-      display: none !important; }
+      display: none;
+      color: #fff;
+      border: 0; }
   .content-wrapper .ajax-loader {
     display: none; }
 
@@ -661,12 +801,63 @@ footer {
             height: 110px;
             margin-bottom: 30px;
             font-size: 28px; } }
+      .popup.form .form-wrap .hidden-input {
+        display: none; }
+      .popup.form .form-wrap .wpcf7-not-valid {
+        background-color: rgba(255, 182, 193, 0.7) !important;
+        color: #fff !important;
+        /* Firefox 19+ */
+        /* Firefox 18- */ }
+        .popup.form .form-wrap .wpcf7-not-valid::-webkit-input-placeholder {
+          color: #fff; }
+        .popup.form .form-wrap .wpcf7-not-valid::-moz-placeholder {
+          color: #fff; }
+        .popup.form .form-wrap .wpcf7-not-valid:-moz-placeholder {
+          color: #fff; }
+        .popup.form .form-wrap .wpcf7-not-valid:-ms-input-placeholder {
+          color: #fff; }
+        .popup.form .form-wrap .wpcf7-not-valid .ui-selectmenu-text {
+          color: #fff; }
+      .popup.form .form-wrap .wpcf7-not-valid-tip {
+        display: none; }
       .popup.form .form-wrap .form-input-select {
         padding: 10px;
         float: left; }
         @media only screen and (min-width: 2320px) {
           .popup.form .form-wrap .form-input-select {
             padding: 10px; } }
+      .popup.form .form-wrap .ui-selectmenu-button {
+        padding: 15px;
+        width: 363px !important;
+        height: 55px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: lighter;
+        color: #1d1f21;
+        background: #fff;
+        border: 1px solid #fff;
+        border-radius: 0px;
+        float: left; }
+        @media only screen and (min-width: 2320px) {
+          .popup.form .form-wrap .ui-selectmenu-button {
+            padding: 30px;
+            width: 726px !important;
+            height: 110px;
+            margin-bottom: 30px;
+            font-size: 28px; } }
+        .popup.form .form-wrap .ui-selectmenu-button .ui-selectmenu-text {
+          padding: 0;
+          line-height: normal;
+          color: black;
+          font-weight: 400;
+          font: 14px Arial;
+          position: relative;
+          top: 5px; }
+          @media only screen and (min-width: 2320px) {
+            .popup.form .form-wrap .ui-selectmenu-button .ui-selectmenu-text {
+              font-size: 28px;
+              top: 10px; } }
       .popup.form .form-wrap .form-textarea {
         float: right;
         width: 387px;
@@ -710,8 +901,221 @@ footer {
         color: #fff; }
     .popup.form .wpcf7-response-output {
       display: none !important; }
-  .popup .ajax-loader {
+
+.ajax-loader {
+  display: none; }
+
+.ui-front.ui-selectmenu-open {
+  z-index: 10000; }
+
+.ui-selectmenu-menu li {
+  height: 45px;
+  padding: 10px !important;
+  box-sizing: border-box; }
+  @media only screen and (min-width: 2320px) {
+    .ui-selectmenu-menu li {
+      padding: 20px !important;
+      height: 90px;
+      font-size: 2em; } }
+
+.our-speciality-phone {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  .our-speciality-phone .title-block {
+    font-size: 25px;
+    font-weight: 500; }
+    @media only screen and (min-width: 2320px) {
+      .our-speciality-phone .title-block {
+        font-size: 50px; } }
+  .our-speciality-phone .quick-tabs-links {
+    padding-left: 0; }
+    .our-speciality-phone .quick-tabs-links li {
+      list-style: none;
+      display: inline-block;
+      font-size: 20px;
+      margin-right: 30px; }
+      @media only screen and (min-width: 2320px) {
+        .our-speciality-phone .quick-tabs-links li {
+          font-size: 40px;
+          margin-right: 60px; } }
+      .our-speciality-phone .quick-tabs-links li a {
+        font-size: 20px;
+        color: #0052c2;
+        font-weight: 500;
+        text-decoration: none;
+        background-image: url(../images/quick-tabs-link-bg.png);
+        background-repeat: repeat-x;
+        padding-bottom: 3px;
+        background-position: 0px 25px; }
+        @media only screen and (min-width: 2320px) {
+          .our-speciality-phone .quick-tabs-links li a {
+            font-size: 40px;
+            padding-bottom: 6px;
+            background-position: 0 50px; } }
+      .our-speciality-phone .quick-tabs-links li.active a {
+        pointer-events: none;
+        cursor: default;
+        color: #000;
+        background-image: none; }
+  .our-speciality-phone .quick-tabs-item {
+    width: 85%;
+    display: inline-block;
+    text-align: center;
+    background-color: #fff;
+    vertical-align: top; }
+    .our-speciality-phone .quick-tabs-item a {
+      text-decoration: none; }
+    .our-speciality-phone .quick-tabs-item .qt-wrap {
+      padding: 35px 0 20px 0; }
+    @media only screen and (min-width: 2320px) {
+      .our-speciality-phone .quick-tabs-item {
+        width: 426px;
+        height: 426px; } }
+    .our-speciality-phone .quick-tabs-item .image-wrap {
+      box-sizing: border-box;
+      width: 90px;
+      height: 90px;
+      display: block;
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
+      border-radius: 50px;
+      text-align: center;
+      margin: 0 auto 0 auto; }
+      @media only screen and (min-width: 2320px) {
+        .our-speciality-phone .quick-tabs-item .image-wrap {
+          width: 180px;
+          height: 180px;
+          margin: 70px auto 20px auto;
+          border-radius: 100px; } }
+      .our-speciality-phone .quick-tabs-item .image-wrap img {
+        margin: 30px auto 0 auto;
+        width: 50%;
+        width: 32px;
+        height: 32px; }
+        @media only screen and (min-width: 2320px) {
+          .our-speciality-phone .quick-tabs-item .image-wrap img {
+            width: 64px;
+            height: 64px;
+            margin: 60px auto 0 auto; } }
+        .our-speciality-phone .quick-tabs-item .image-wrap img.hover {
+          display: none;
+          width: 32px;
+          height: 32px; }
+          @media only screen and (min-width: 2320px) {
+            .our-speciality-phone .quick-tabs-item .image-wrap img.hover {
+              width: 64px;
+              height: 64px; } }
+    .our-speciality-phone .quick-tabs-item p {
+      color: #0052c2;
+      font-size: 14px;
+      font-weight: 500; }
+      @media only screen and (min-width: 2320px) {
+        .our-speciality-phone .quick-tabs-item p {
+          font-size: 28px; } }
+    .our-speciality-phone .quick-tabs-item:nth-child(3n) {
+      background-color: #f9f9f9; }
+    .our-speciality-phone .quick-tabs-item:nth-child(3n-2) {
+      background-color: #ededed; }
+    .our-speciality-phone .quick-tabs-item:hover {
+      background-color: #4b0c09; }
+      .our-speciality-phone .quick-tabs-item:hover p {
+        color: #fff; }
+      .our-speciality-phone .quick-tabs-item:hover .image-wrap {
+        border: 2px solid #fff;
+        width: 92px;
+        height: 92px; }
+        @media only screen and (min-width: 2320px) {
+          .our-speciality-phone .quick-tabs-item:hover .image-wrap {
+            border: 4px solid #fff;
+            width: 184px;
+            height: 184px; } }
+        .our-speciality-phone .quick-tabs-item:hover .image-wrap .show {
+          display: none; }
+        .our-speciality-phone .quick-tabs-item:hover .image-wrap .hover {
+          display: block; }
+
+.backcall-title {
+  width: 100%;
+  margin: 30px auto 18px auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500; }
+
+.form.phone {
+  width: 90%;
+  height: 152px;
+  margin: 0 auto;
+  background-color: #4b0c09;
+  padding: 21px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  text-align: center; }
+  .form.phone p {
+    margin: 0; }
+  .form.phone input[type="text"] {
+    width: 90%;
+    height: 53px;
+    box-sizing: border-box;
+    text-align: center; }
+  .form.phone .form-submit {
+    width: 175px;
+    height: 37px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border: 2px solid #e7e7e7;
+    border-radius: 37px;
+    background-clip: padding-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px 0 0 0;
+    background-color: #5d2522;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer; }
+  .form.phone .wpcf7-not-valid-tip {
     display: none; }
+  .form.phone .wpcf7-not-valid {
+    background-color: rgba(255, 182, 193, 0.7);
+    color: #fff !important;
+    /* Firefox 19+ */
+    /* Firefox 18- */ }
+    .form.phone .wpcf7-not-valid::-webkit-input-placeholder {
+      color: #fff; }
+    .form.phone .wpcf7-not-valid::-moz-placeholder {
+      color: #fff; }
+    .form.phone .wpcf7-not-valid:-moz-placeholder {
+      color: #fff; }
+    .form.phone .wpcf7-not-valid:-ms-input-placeholder {
+      color: #fff; }
+    .form.phone .wpcf7-not-valid .ui-selectmenu-text {
+      color: #fff; }
+  .form.phone .wpcf7-response-output {
+    display: none !important; }
+
+.wrapper-for-menu {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0; }
+  .wrapper-for-menu .phone-menu {
+    width: 250px;
+    background-color: #1d1f21;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: none; }
+    .wrapper-for-menu .phone-menu ul li {
+      padding: 5px;
+      list-style: none;
+      list-style-image: none; }
+      .wrapper-for-menu .phone-menu ul li a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 5px; }
 
 .right-sidebar {
   display: inline-block;
@@ -729,15 +1133,19 @@ footer {
       .right-sidebar .sidebar-wrap {
         padding: 0 26px; } }
     .right-sidebar .sidebar-wrap .blue-title {
-      font-size: 20px;
       text-align: center;
-      color: #0052c2;
       margin: 14px 0 6px 0;
-      font-weight: 500; }
+      font-weight: 500;
+      color: #0052c2;
+      font-size: 20px; }
       @media only screen and (min-width: 2320px) {
         .right-sidebar .sidebar-wrap .blue-title {
           font-size: 40px;
           margin: 28px 0 12px 0; } }
+      .right-sidebar .sidebar-wrap .blue-title a {
+        color: #0052c2;
+        font-size: 20px;
+        text-decoration: none; }
     .right-sidebar .sidebar-wrap .dipolm-text {
       margin: 6px 0 18px 0;
       text-align: center;
@@ -975,6 +1383,14 @@ footer {
       .staff-wrapper .content .staff-wrap .staff-item:hover .more {
         display: block; }
 
+.contacts-wrapper.phone {
+  width: 100%;
+  margin: 0; }
+  .contacts-wrapper.phone .ya-map {
+    width: 43%;
+    height: 200px; }
+  .contacts-wrapper.phone .content {
+    width: 57%; }
 .contacts-wrapper .ya-map {
   float: right;
   width: 508px;
@@ -995,6 +1411,8 @@ footer {
         margin-bottom: 200px; } }
     .contacts-wrapper .content .contacts .item {
       margin-top: 30px; }
+      .contacts-wrapper .content .contacts .item:nth-child(1) {
+        margin-top: 0; }
       @media only screen and (min-width: 2320px) {
         .contacts-wrapper .content .contacts .item {
           margin-top: 60px; } }
@@ -1022,6 +1440,26 @@ footer {
   .contacts-wrapper .form.contacts .your-message textarea {
     float: none; }
 
+.spec-wrapper.phone {
+  padding: 0 20px; }
+  .spec-wrapper.phone .spec-diplom {
+    height: auto;
+    text-align: center;
+    padding: 0; }
+    .spec-wrapper.phone .spec-diplom .diplom-block {
+      width: 30%;
+      margin-right: 0px; }
+      .spec-wrapper.phone .spec-diplom .diplom-block img {
+        width: 80%;
+        height: auto; }
+    .spec-wrapper.phone .spec-diplom .cost-block {
+      width: 33%;
+      margin-right: 0px; }
+    .spec-wrapper.phone .spec-diplom .employment-block {
+      width: 33%; }
+      .spec-wrapper.phone .spec-diplom .employment-block img.spec {
+        width: 40%;
+        height: auto; }
 .spec-wrapper h1 {
   margin-bottom: 0; }
 .spec-wrapper .course-time {

@@ -10,7 +10,7 @@
 	<div class="diplom-block">
 		<div class="dip-wrap"><img src="<?=get_template_directory_uri()?>/images/diplom-image.png" alt="" class="retina diplom">
 			<div class="sidebar-wrap">
-				<p class="blue-title">Диплом</p>
+				<p class="blue-title"><a href="/diplom">Диплом</a></p>
 				<p class="dipolm-text">Выпускники школы получают<br>диплом государственного образца</p>
 			</div>
 		</div>
@@ -20,14 +20,14 @@
 				<div class="under-title">Стажировка</div>
 				<p class="under-text">После обучения студенты<br>по желанию распределяются<br>на стажировку</p>
 				<div class="under-link">
-					<a href="#">СПИСОК КОМПАНИЙ</a>
+					<a href="trudoustroistvo">СПИСОК КОМПАНИЙ</a>
 				</div>
 			</div>
 		</div>
 		<div class="diplom-education dip-wrap">
 			<div class="sidebar-wrap">
 				<img class="retina education-image" src="<?=get_template_directory_uri()?>/images/diplom-image-education.png" alt="">
-				<p class="blue-title">Высшее образование</p>
+				<p class="blue-title"><a href="/higher-education">Высшее образование</a></p>
 				<p class="dipolm-text">Для студентов, успешно<br>окончивших обучение в школе</p>
 			</div>
 		</div>

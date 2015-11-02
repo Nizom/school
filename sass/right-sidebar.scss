@@ -14,14 +14,19 @@
 			padding: 0 26px;
 		}
 		.blue-title{
-			font-size: 20px;
 			text-align: center;
-			color: #0052c2;
 			margin: 14px 0 6px 0;
 			font-weight: 500;
+			color: #0052c2;
+			font-size: 20px;
 			@include respond-to(retina){
 				font-size: 40px;
 				margin: 28px 0 12px 0;
+			}
+			a{
+				color: #0052c2;
+				font-size: 20px;
+				text-decoration: none;
 			}
 		}
 		.dipolm-text{

@@ -1,4 +1,21 @@
 .contacts-wrapper{
+	&.phone{
+		// width: 320px;
+		width: 100%;
+		margin: 0;
+		.ya-map{
+			// width: 320px;
+			width: 43%;
+			height: 200px;
+			// float: none;
+		}
+		.content{
+			// width: 320px;
+			// width: 100%;
+			width: 57%;		
+		}
+	}
+
 	.ya-map{
 		float: right;
 		width: 508px;
@@ -19,6 +36,9 @@
 				margin-bottom: 200px;
 			}
 			.item{
+				&:nth-child(1){
+					margin-top: 0;
+				}
 				margin-top: 30px;
 				@include respond-to(retina){
 					margin-top: 60px;

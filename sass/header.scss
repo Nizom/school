@@ -1,4 +1,4 @@
-header{
+header.main{
 	background-color: #4b0c09;
 	padding-top: 40px;
 	position: relative;
@@ -61,10 +61,11 @@ header{
 		}
 		.navigation{
 			.menu{
-				padding-bottom: 40px;
+				margin: 0;
+				padding: 20px 0 40px 40px;
 				display: inline-block;
 				@include respond-to(retina){
-					padding:0 0 60px 80px;
+					padding:40px 0 80px 80px;
 				}
 				li{
 					display: inline-block;
@@ -127,6 +128,7 @@ header{
 			}
 		}
 		.spec-menu{
+			display: none;
 			font-size: 0;
 			position: absolute;
 			top: 142px;
@@ -142,16 +144,29 @@ header{
 				top: 284px;
 				// height: 427px;
 			}
+			.absolute-magic{
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				bottom: 0px;
+				width: 50%;
+				height: 100%;
+				background-color: #f2f2f2;
+				z-index: -1;
+			}
 			.form-wrap{
 				width: 50%;
 				height: 100%;
 				vertical-align: top;
 				display: inline-block;
-				padding: 25px 30px 30px 30px;
+				padding: 25px 30px 0px 30px;
 				box-sizing: border-box;
+				// &.right{
+				// 	width: 100%;
+				// }
 				@include respond-to(retina){
 					//width: 48px;
-					padding: 50px 60px 60px 60px;
+					padding: 50px 60px 0px 60px;
 				}
 				.title{
 					font-size: 14px;
@@ -163,9 +178,9 @@ header{
 					}
 				}
 				.spec-link{
-					padding-bottom: 15px;
+					padding-bottom: 20px;
 					@include respond-to(retina){
-						padding-bottom: 30px;
+						padding-bottom: 40px;
 					}
 				}
 				&:nth-child(2){
@@ -187,4 +202,45 @@ header{
 			}
 		}
 	}	
+}
+header.phone{
+	padding: 10px 0 20px 0;
+	background-color: #4b0c09;
+	.header{
+		position: relative;
+		// width: 320px;
+		text-align: center;
+		margin: 0 auto;
+		.logo{
+			display: block;
+			width: 73px;
+			margin: 0 auto;
+		}
+		.site-description{
+			margin: 15px 0;
+			font-weight: bold;
+			font-size: 15px;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		.phones{
+			font-size: 15px;
+			color: #fff;
+			margin: 0;
+
+		}
+		.phone-header-button{
+			position: absolute;
+			top: 25px;
+			left: 25px;
+			&.active{
+				right: 25px;
+				left: initial;
+			}
+			img{
+				width: 17.5px;
+				height: 11px;
+			}
+		}
+	}
 }

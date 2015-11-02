@@ -7,12 +7,16 @@ require_once TM_DIR . '/lib/Parser.php';
  function add_style_wt(){ 
 wp_enqueue_style( 'my-styles', get_template_directory_uri() . '/css/styles.css', array(), '1'); 
 wp_enqueue_style( 'fotorama', 'http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css', array(), '1');
+wp_enqueue_style( 'jq-ui', '//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css', array(), '1');
+
 } 
 
 function add_script_wt(){ 
 wp_enqueue_script( 'jq', '//code.jquery.com/jquery-1.11.3.min.js', array(), '1');
+wp_enqueue_script( 'jq-ui', '//code.jquery.com/ui/1.11.4/jquery-ui.js', array(), '1');
 wp_enqueue_script( 'bPopup',  get_template_directory_uri() . '/js/jquery.bpopup.min.js', array(), '1'); 
 wp_enqueue_script( 'my-jquery', get_template_directory_uri() . '/js/jq.js', array('jq'), '1'); 
+wp_enqueue_script( 'cookies', get_template_directory_uri() . '/js/jquery.cookie.js', array('jq'), '1'); 
 wp_enqueue_script( 'ya_map', 'https://api-maps.yandex.ru/2.1/?lang=ru_RU', array(), '1'); 
 wp_enqueue_script( 'init', get_template_directory_uri() . '/js/init.js', array('ya_map'), '1'); 
 wp_enqueue_script( 'fotorama', 'http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js', array('jq'), '1');
@@ -59,6 +63,11 @@ add_shortcode('specialization_header_menu', 'specialization_header_menu_views_fn
 function specialization_header_menu_views_fn(){
 	$parser = new Parser();
 	$parser->render(TM_DIR.'/views/specialization-header-menu-views.php', array(), true);
+}
+add_shortcode('select-form', 'c7_form_fn');
+function c7_form_fn(){
+	$parser = new Parser();
+	return $parser->render(TM_DIR.'/views/c7-form-views.php', array(), false);
 }
 //add_menu_page(page_title, menu_title, access_level/capability, file, [function]);
 
@@ -287,7 +296,12 @@ function specialization_extra_fields_update( $post_id ){
 	}
 	return $post_id;
 }
-
+//contact 7 shortcodes
+function shortcodes_in_cf7( $form ) {
+	$form = do_shortcode( $form );
+	return $form;
+}
+add_filter( 'wpcf7_form_elements', 'shortcodes_in_cf7' );
 
 
 //Search-form

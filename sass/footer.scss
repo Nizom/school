@@ -1,5 +1,6 @@
-html, body, .wrapper,.content-wrapper { 
-	height: 100%; 
+html, body, .wrapper,.wrapper .content-wrapper { 
+	@media only screen and (min-width:1000px){
+	height: 100%; }
 }
 body > .wrapper {
 	height: auto; min-height: 100%;
@@ -10,7 +11,7 @@ body > .wrapper {
 		padding-bottom: 346px;
 	}
 }
-footer { 
+footer.main { 
 	position: absolute;
     bottom: 0;
 	height: 173px;
@@ -18,7 +19,7 @@ footer {
 		height: 346px;
 	}
 }
-footer{
+footer.main{
 	background-color: #1d1f21;
     width: 100%;
 	.footer{
@@ -65,6 +66,7 @@ footer{
 		#searchform{
 			float: right;
 			margin-top: 23px;
+			position: relative;
 			.search-field{
 				height: 37px;
 				width: 177px;
@@ -81,7 +83,45 @@ footer{
 					font-size: 24px;
 				}
 			}
+			img{
+				position: absolute;
+				top: 12px;
+				right: 15px;
+				width: 15px;
+				@include respond-to(retina){
+					top: 70px;
+					right: 30px;
+					width: 29px;
+				}
+			}
 		}
 
+	}
+}
+footer.phone{
+	background-color: #1d1f21;
+	padding: 10px 0 20px 0;
+	.footer-wrap{
+		width: 320px;
+		text-align: center;
+		margin: 0 auto;
+		.logo{
+			display: block;
+			width: 73px;
+			margin: 0 auto;
+		}
+		.site-description{
+			margin: 15px 0;
+			font-weight: bold;
+			font-size: 15px;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		.full-link{
+			font-size: 14px;
+			font-weight: lighter;
+			color: #fff;
+			text-decoration: none;
+		}
 	}
 }

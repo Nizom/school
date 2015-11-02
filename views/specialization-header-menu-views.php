@@ -8,7 +8,9 @@
 				<?php } ?>
 			<?php endwhile;?>
 		</div>
-		<div class="form-wrap">
+		<div class="absolute-magic">
+		</div>
+		<div class="form-wrap right">
 			<p class="title">Заочное отделение</p>
 			<?php while ( $specialization->have_posts() ) : $specialization->the_post(); ?>
 				<?php if ((get_post_meta(get_the_ID(), 'form', true))==2) {?>
@@ -16,6 +18,5 @@
 				<?php } ?>
 			<?php endwhile;?>
 		</div>
-		
 		<?php wp_reset_postdata(); ?>	
 	</div>
